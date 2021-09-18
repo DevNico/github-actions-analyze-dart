@@ -1647,7 +1647,6 @@ async function format(workingDirectory) {
 		args.push(lineLength);
 	}
 
-	args.push('--dry-run');
 	args.push('.');
 
 	await exec.exec('dart', args, options);
